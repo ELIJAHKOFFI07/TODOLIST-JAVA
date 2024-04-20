@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+#signin{
+		-fx-background-color: #2e2e2e;
+		-fx-background-image: url("../Image/Background1.png"),url("../Image/Background5.png");
+	    -fx-background-repeat: stretch;
+	    -fx-background-size: 140 150,200 200;
+	    -fx-background-position: left top,right bottom;
+}
+#fond{
+-fx-background-color: #2e2e2e;
+
+}
+
+#valideur{
+		-fx-background-color: #FFFFFF;
+    -fx-background-image: url("../Image/Background3.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100 100;
+    -fx-background-position: left top;
+}
+
+#modifier{
+		-fx-background-color: #FFFFFF;
+		-fx-background-image:url("../Image/Background4.png");
+	    -fx-background-repeat: stretch;   
+	    -fx-background-size: 140 150,200 200;
+	    -fx-background-position:right bottom;
+}
+
+
+
+#ajouter{
+		-fx-background-color: #8000FF;
+		-fx-background-radius: 20;	
+		
+}
+
+#delete{
+		-fx-background-color: #ffd15c;
+		-fx-background-radius: 20;	
+		
+}
+
+#affichage{
+	-fx-font: 11px "Pacifico";
+	-fx-text-fill: #044E54;
+}
+
+#cercle{
+			-fx-background-radius: 100;
+			-fx-border-radius: 100;
+			-fx-border-color: #8000FF;
+			}
+			
+#saisir{
+	-fx-background-radius: 10;
+
+}
+#boutton{
+    -fx-background-radius: 50%; /* Définir le rayon de courbure des coins à 50% pour obtenir une forme circulaire */
+    -fx-padding:60px auto;
+    -fx-pref-height: 40px;
+    -fx-border-radius: 50%;
+    -fx-background-color: #C0C0C0;
+    -fx-pref-width: 30px;
+
+
+}
+#key{
+    -fx-text-fill: black;
+    -fx-font-family:Calibri,bold ;
+}
+#forgotten{
+    -fx-pref-height: 55px;
+    -fx-alignement:RIGHT;
+
+}
+#label1, #label2{
+    -fx-font-size: 14px;
+    -fx-text-fill: #B5B5B5;
+    -fx-font-style: bold;
+
+}
+#forgot{
+    -fx-font-size: 10px;
+    -fx-text-fill: #B5B5B5;
+    -fx-font-style: bold;}
+.shadow{
+	
+	-fx-effect:dropShadow(tree-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);
+	
+}

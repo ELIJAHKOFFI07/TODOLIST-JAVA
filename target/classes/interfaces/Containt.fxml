@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="space" prefHeight="34.0" prefWidth="315.0" style="-fx-background-color: #ffffff; -fx-background-radius: 12; -fx-border-radius: 12;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="controleurObject.Containt">
+   <children>
+      <JFXButton fx:id="butTacheDay" layoutX="244.0" layoutY="5.0" onAction="#actTacheDay" prefHeight="38.0" prefWidth="80.0" text="Button" />
+      <Label fx:id="titreTache" layoutX="44.0" layoutY="6.0" text="etudié">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="heurDep" layoutX="47.0" layoutY="30.0" text="12h30" />
+   </children>
+   <effect>
+      <DropShadow blurType="GAUSSIAN" offsetY="2.0">
+         <color>
+            <Color red="0.8100000023841858" green="0.8100000023841858" blue="0.8100000023841858" opacity="0.4870820641517639" />
+         </color>
+      </DropShadow>
+   </effect>
+</AnchorPane>

@@ -1,0 +1,11 @@
+
+a	java:S112í"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+a	java:S112ø"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+k	java:S117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€™Ìëøÿÿÿÿ
+g	java:S117Š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÒ’Ù
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶±³±
+^
+java:S2095§"GUse try-with-resources or close this "Statement" in a "finally" clause.(Å­é²
+R	java:S125®"<This block of commented-out lines of code should be removed.(¨¿Éþ
+T
+java:S1117¹"8Rename "fxml" which hides the field declared at line 45.(ÞÈöûÿÿÿÿ

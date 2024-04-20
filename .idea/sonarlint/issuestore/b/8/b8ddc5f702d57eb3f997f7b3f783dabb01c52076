@@ -1,0 +1,18 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â»ËÖûÿÿÿÿ
+f	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è”Î¡
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶±³±
+]
+java:S20950"GUse try-with-resources or close this "Statement" in a "finally" clause.(Å­é²
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(¿‹”ıÿÿÿÿ
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(Á÷ô‰şÿÿÿÿ
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(îÍšÆûÿÿÿÿ
+b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İµÍ_
+j
+java:S1659"ODeclare "prenomDestinataire" and all following declarations on a separate line.(â»ËÖûÿÿÿÿ
+<	java:S131+""Add a default case to this switch.(Ö‘ò°úÿÿÿÿ
+P
+java:S1161`":Add the "@Override" annotation above this method signature(‡èú×

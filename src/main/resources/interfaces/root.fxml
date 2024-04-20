@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="window" prefHeight="524.0" prefWidth="724.0" style="-fx-background-color: #ffffff; -fx-border-color: #FFD15C; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleurObject.ControleurRoot">
+   <opaqueInsets>
+      <Insets bottom="16.0" right="16.0" />
+   </opaqueInsets>
+   <children>
+      <AnchorPane id="gradian" fx:id="gradian" layoutX="29.0" layoutY="106.0" prefHeight="162.0" prefWidth="331.0" style="-fx-background-image: linear-gradient(black,white);" stylesheets="@../appli/Main.css" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="105.0">
+         <children>
+            <Label fx:id="labelheureTache" layoutX="205.0" layoutY="133.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="6h" />
+            <Label fx:id="labelnomTache" layoutX="228.0" layoutY="5.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="etudier" />
+            <Label layoutX="234.0" layoutY="30.0" text="taches du jour" textFill="#b0b0b0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Circle layoutX="76.0" layoutY="77.0" radius="57.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: #434AFF;">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9684210419654846" green="0.9433138370513916" blue="0.9433138370513916" opacity="0.009999999776482582" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Label fx:id="labelChrono" layoutX="44.0" layoutY="39.0" text=".. : .. ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="second" layoutX="59.0" layoutY="83.0" text=".. " />
+            <Label layoutX="75.0" layoutY="83.0" text="s" />
+            <Label layoutX="36.0" layoutY="132.0" text="temps restant" textFill="#b0b0b0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="296.0" layoutY="22.0" prefHeight="47.0" prefWidth="129.0" style="-fx-font-size: 32; -fx-font-weight: bold;" text="Accueil" textFill="#9a1eff" />
+      <Label layoutX="37.0" layoutY="313.0" text="day">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDate" layoutX="254.0" layoutY="321.0" style="-fx-font-size: 14;" text="12/8/2022" textFill="#9f40ffaa" />
+      <Label fx:id="labelHeureCourant" layoutX="593.0" layoutY="113.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text=".. : .. : .." />
+      <ImageView fitHeight="19.0" fitWidth="22.0" layoutX="572.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/iconnn/tabler-icon-search.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="26.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/iconnn/Vector.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="76.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/iconnn/menu-board.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="55.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/iconnn/Vector.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="84.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/iconnn/Vector.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="112.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/iconnn/Vector.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="490.0" layoutY="464.0" prefHeight="30.0" prefWidth="186.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 12;">
+         <effect>
+            <DropShadow height="13.02" offsetX="5.0" offsetY="5.0" radius="11.675" width="35.68">
+               <color>
+                  <Color red="0.6039999723434448" green="0.11999999731779099" blue="1.0" opacity="0.23784194886684418" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <JFXButton fx:id="but_tache" layoutX="491.0" layoutY="464.0" onAction="#act_tache" prefHeight="30.0" prefWidth="186.0" style="-fx-background-color: transparent; -fx-border-color: #9a1eff; -fx-border-radius: 10;" text="ajouter une tache" textFill="#9a1eff">
+         <effect>
+            <DropShadow radius="35.31" width="122.24" />
+         </effect>
+      </JFXButton>
+      <ScrollPane fx:id="scroll" layoutX="26.0" layoutY="250.0" prefHeight="160.0" prefWidth="331.0" style="-fx-background-color: #ffffff; -fx-background-radius: 12; -fx-border-radius: 12; -fx-border-color: #9a1eff;" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="25.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="311.0" style="-fx-background-color: #ffffff; -fx-background-radius: 12; -fx-border-radius: 12;">
+               <children>
+                  <GridPane fx:id="gridDay" prefHeight="255.0" prefWidth="326.0" style="-fx-background-color: #ffffff; -fx-border-radius: 12; -fx-background-radius: 12;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <FontAwesomeIconView glyphName="HOME" layoutX="31.0" layoutY="50.0" size="30" />
+   </children>
+</AnchorPane>

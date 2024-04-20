@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pl" prefHeight="524.0" prefWidth="724.0" style="-fx-background-color: #ffffff; -fx-border-color: #FFD15C; -fx-border-radius: 24px; -fx-background-radius: 24;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleurObject.ControleurPlaning">
+   <children>
+      <Label fx:id="historique" layoutX="29.0" layoutY="47.0" text="historique">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="96.0" text="semaine">
+         <font>
+            <Font name="Franklin Gothic Demi" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="154.0" text="lundi " textFill="#ffc940">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="401.0" layoutY="150.0" text="jeudi">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow height="61.41" offsetX="-5.0" offsetY="6.0" radius="20.1025">
+               <color>
+                  <Color red="0.4399999976158142" green="0.43560001254081726" blue="0.43560001254081726" opacity="0.4354103207588196" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label fx:id="date1" layoutX="145.0" layoutY="53.0" text=".. / ..  / ...." textFill="#9a1eff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="date2" layoutX="134.0" layoutY="99.0" text=".. / ..  / ...." textFill="#9a1eff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="heure" layoutX="561.0" layoutY="103.0" text=".. : ..  : .." AnchorPane.bottomAnchor="389.79999999999995" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="116.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="-4.0" offsetY="7.0">
+               <color>
+                  <Color red="0.6105263233184814" green="0.5992202758789062" blue="0.5992202758789062" opacity="0.2800000011920929" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <JFXButton fx:id="modifier" layoutX="516.0" layoutY="56.0" onAction="#modifier_action" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: #ffffff; -fx-border-color: #FFD15C; -fx-border-radius: 12;" text="modifier" textFill="#9a1eff">
+         <effect>
+            <DropShadow height="94.16" radius="41.317499999999995" width="73.11" />
+         </effect></JFXButton>
+      <JFXButton fx:id="add" layoutX="586.0" layoutY="455.0" onAction="#sadd_action" prefHeight="45.0" prefWidth="71.0" style="-fx-background-color: #9a1eff; -fx-border-color: #9a1eff; -fx-border-radius: 75; -fx-background-radius: 75;" text="add" textFill="#fbfafc">
+         <effect>
+            <DropShadow height="62.26" radius="35.0975" width="80.13" />
+         </effect></JFXButton>
+      <Label fx:id="vendredi" layoutX="497.0" layoutY="152.0" text="vendredri">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="273.0" layoutY="151.0" text="mercredi">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="151.0" text="mardi ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <GridPane fx:id="plan_lundi" layoutX="24.0" layoutY="191.0" prefHeight="194.0" prefWidth="96.0" style="-fx-background-color: #E3E6FF; -fx-border-color: #FFD15C; -fx-border-radius: 14; -fx-background-radius: 14;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="47.38" offsetX="-6.0" offsetY="10.0" radius="25.9525" width="58.43">
+               <color>
+                  <Color red="0.6000000238418579" green="0.6000000238418579" blue="0.6000000238418579" opacity="0.25" />
+               </color>
+            </DropShadow>
+         </effect>
+      </GridPane>
+      <GridPane fx:id="plan_mardi" layoutX="156.0" layoutY="191.0" prefHeight="176.0" prefWidth="93.0" style="-fx-background-color: #E3E6FF; -fx-border-color: #FFD15C; -fx-border-radius: 14; -fx-background-radius: 14;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="71.20001831054688" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="49.75" offsetX="-6.0" offsetY="10.0" radius="24.6875" width="51.0">
+               <color>
+                  <Color red="0.6000000238418579" green="0.6000000238418579" blue="0.6000000238418579" opacity="0.292553186416626" />
+               </color>
+            </DropShadow>
+         </effect>
+      </GridPane>
+      <GridPane fx:id="plan_mercredi" layoutX="270.0" layoutY="190.0" prefHeight="175.0" prefWidth="93.0" style="-fx-background-color: #E3E6FF; -fx-border-color: #FFD15C; -fx-border-radius: 14; -fx-background-radius: 14;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="65.59998168945314" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="71.20001831054688" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="41.0" offsetX="-6.0" offsetY="10.0" radius="22.5" width="51.0">
+               <color>
+                  <Color red="0.6000000238418579" green="0.6000000238418579" blue="0.6000000238418579" opacity="0.2773556113243103" />
+               </color>
+            </DropShadow>
+         </effect>
+      </GridPane>
+      <GridPane fx:id="plan_jeudi" layoutX="388.0" layoutY="191.0" prefHeight="177.0" prefWidth="93.0" style="-fx-background-color: #E3E6FF; -fx-border-color: #FFD15C; -fx-border-radius: 14; -fx-background-radius: 14;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="71.20001831054688" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="48.5" offsetX="-6.0" offsetY="10.0" radius="24.375" width="51.0">
+               <color>
+                  <Color red="0.6000000238418579" green="0.6000000238418579" blue="0.6000000238418579" opacity="0.262158066034317" />
+               </color>
+            </DropShadow>
+         </effect>
+      </GridPane>
+      <GridPane fx:id="plan_vendredi" layoutX="503.0" layoutY="192.0" prefHeight="176.0" prefWidth="93.0" style="-fx-background-color: #E3E6FF; -fx-border-color: #FFD15C; -fx-border-radius: 14; -fx-background-radius: 14;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="65.59998168945314" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="71.20001831054688" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <effect>
+            <DropShadow height="45.68" offsetX="-6.0" offsetY="10.0" radius="23.67" width="51.0">
+               <color>
+                  <Color red="0.6000000238418579" green="0.6000000238418579" blue="0.6000000238418579" opacity="0.2560790181159973" />
+               </color>
+            </DropShadow>
+         </effect>
+      </GridPane>
+      <Label layoutX="413.0" layoutY="464.0" prefHeight="31.0" prefWidth="71.0" style="-fx-border-color: #9a1eff; -fx-border-radius: 10;" text="  12/4/2003" />
+      <Label layoutX="322.0" layoutY="465.0" prefHeight="31.0" prefWidth="71.0" style="-fx-border-color: #9a1eff; -fx-border-radius: 10;" text="  12/4/2003" />
+      <AnchorPane layoutX="22.0" layoutY="413.0" prefHeight="33.0" prefWidth="162.0" style="-fx-background-color: #E7F3FF; -fx-background-radius: 10; -fx-border-radius: 10;">
+         <effect>
+            <DropShadow offsetX="-6.0" offsetY="5.0">
+               <color>
+                  <Color red="0.6899999976158142" green="0.6761999726295471" blue="0.6761999726295471" opacity="0.23176291584968567" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="25.0" layoutY="463.0" prefHeight="33.0" prefWidth="162.0" style="-fx-background-color: #E7F3FF; -fx-background-radius: 10; -fx-border-radius: 10;">
+         <effect>
+            <DropShadow offsetX="-6.0" offsetY="5.0">
+               <color>
+                  <Color red="0.6899999976158142" green="0.6761999726295471" blue="0.6761999726295471" opacity="0.23176291584968567" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

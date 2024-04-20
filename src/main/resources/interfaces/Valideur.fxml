@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="valideur" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleurObject.ControleurValideur">
+   <children>
+      <Label id="cercle" fx:id="chrono" alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="170.0" stylesheets="@../css/Main.css" text="temps">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin></Label>
+      <Label text="Temps ecouler">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Label>
+      <VBox alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="250.0">
+         <children>
+            <Label text="cliquer sur effectuer pour prouver" textFill="#9f40ffc1">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="que avez effectuer la tache" textFill="#9f40ffb8">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </VBox>
+      <Button id="ajouter" fx:id="effectuer" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#action_chrono" prefWidth="250.0" text="effectuer" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <stylesheets>
+      <URL value="@../css/Main.css" />
+      <URL value="@../appli/Main.css" />
+   </stylesheets>
+</VBox>

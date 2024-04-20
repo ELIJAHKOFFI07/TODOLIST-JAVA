@@ -1,0 +1,11 @@
+
+h	java:S112—"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8íú‰±ï1
+h	java:S112¢"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8îú‰±ï1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶±³±8ğú‰±ï1
+q
+java:S2095S"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€Ô‚‰şÿÿÿÿ8¥û‰±ï1
+
+java:S1186/"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ê÷·I8¦û‰±ï1
+X	java:S125["<This block of commented-out lines of code should be removed.(±ß‰¾8¯û‰±ï1
+U
+java:S1117d"8Rename "fxml" which hides the field declared at line 32.(°¤Ì—8²û‰±ï1

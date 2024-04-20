@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: #EEEDF2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleurObject.ControleurAceuil">
+   <right>
+      <AnchorPane fx:id="menu" prefHeight="518.0" prefWidth="714.0" style="-fx-background-color: #ffffff; -fx-border-color: #FFD15C; -fx-border-radius: 15; -fx-background-radius: 15;" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets bottom="16.0" right="16.0" />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets bottom="16.0" right="16.0" top="16.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="550.0" prefWidth="178.0" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets top="16.0" />
+         </opaqueInsets>
+         <children>
+            <JFXButton fx:id="but_Acceuil" layoutX="23.0" layoutY="52.0" onAction="#clik_acceuil" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: #ffffff; -fx-border-color: #9a1eff; -fx-border-radius: 12; -fx-background-radius: 12;" text="acceuil" textFill="#9a1eff" AnchorPane.topAnchor="52.0">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="75.45" radius="40.7325" width="89.48" />
+               </effect></JFXButton>
+            <JFXButton fx:id="but_list" layoutX="26.0" layoutY="157.0" onAction="#act_list" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: #ffffff; -fx-border-color: #9a1eff; -fx-border-radius: 12; -fx-background-radius: 12;" text="liste" textFill="#9a1eff" />
+            <JFXButton fx:id="but_planning" layoutX="26.0" layoutY="102.0" onAction="#act_planning" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #ffffff; -fx-border-color: #9a1eff; -fx-border-radius: 12; -fx-background-radius: 12;" text="planning" textFill="#9a1eff" />
+         </children>
+      </AnchorPane>
+   </left>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</BorderPane>
